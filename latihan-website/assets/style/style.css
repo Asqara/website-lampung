@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --main-color: #aad0d9 ;
+    --second--color: #f7f7f7 ;
+    --font-color: #114b5f;
+    --font-size: 17px;
+    --font-heading: 40px;
+    --hover-color:  #aad0d9;
+    --background-color: #f7f7f7;
+}
+body{
+    background-color: var(--background-color);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--font-size);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+#Heading{
+    background-color: var(--main-color);
+    text-align: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+}
+.navigation{
+    background-color: var(--second--color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.navigation li{
+    padding: 30px;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.navigation li a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    color: var(--hover-color);
+    transition: ease-in-out;
+}
+
+img{
+    height: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer{
+    text-align: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 15px;
+}
+.content{
+    padding: 5px;
+}
+.sejarah-lampung,.geografis-lampung,.wisata-lampung{
+    font-size: 17px;
+    text-indent: 2em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-transform: capitalize
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+h2,h3{
+    text-transform: capitalize;
+}
+.judul::first-letter{
+    font-size: 60px;
+}
+.informasi>h3{
+    text-align: center;
+}
+.article-lampung{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center ;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1b4965;
+    transition: 0.3s;
+    z-index: 1000;
+}
+#sidebar ul {
+    list-style-type: none;
+    padding-top: 5px;
+}
+#sidebar li {
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+#sidebar a {
+    color: white;
+    text-decoration: none;
+}
+#sidebarToggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    background: none;
+    border: none;
+    color: #1b4965;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .sejarah-lampung,.geografis-lampung,.wisata-lampung{
+        font-size: 15px;
+        text-indent: 2em;
+    }
+    .navigation {
+        display: none;
+    }
+    #sidebarToggle {
+        display: block;
+    }
+    #Heading{
+        padding-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
